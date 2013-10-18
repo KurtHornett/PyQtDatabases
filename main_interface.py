@@ -52,6 +52,10 @@ class ShopWindow(QMainWindow):
         self.product_toolbar.addAction(self.add_product)
         self.product_toolbar.addAction(self.browse_products)
 
+        # Add KeyBoard shorvus
+        self.open_database.setShortcut(QKeySequence.Open)
+        self.add_customer.setShortcut(QKeySequence('Ctrl+c'))
+        
         #add toolbars to window
         self.addToolBar(self.database_toolbar)
         self.addToolBar(self.customer_toolbar)
